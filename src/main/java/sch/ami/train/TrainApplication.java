@@ -5,7 +5,7 @@ import javafx.application.Platform;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import net.rgielen.fxweaver.core.FxWeaver;
+//import net.rgielen.fxweaver.core.FxWeaver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -42,10 +42,10 @@ class JavaFxApplication extends Application {
 
     @Override
     public void start(Stage stage) {
-        FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
-        Parent root = fxWeaver.loadView(MyController.class);
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+//        FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
+//        Parent root = fxWeaver.loadView(MyController.class);
+//        Scene scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
     }
 }
